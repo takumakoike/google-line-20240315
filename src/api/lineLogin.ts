@@ -5,7 +5,7 @@ const LIFF_ID = "2004006139-5eWAxRAO";
 
 export async function LINE_LOGIN(){
 
-    liff.init({
+    await liff.init({
         liffId: LIFF_ID,
     });
 
