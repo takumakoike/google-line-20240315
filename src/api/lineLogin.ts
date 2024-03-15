@@ -9,16 +9,23 @@ export async function LINE_LOGIN(){
         liffId: LIFF_ID,
     });
 
-    if(!liff.isLoggedIn()) {
-        liff.login();
-    }
+    // LIFFの初期化が完了したら自動でログイン処理を開始
+    liff.ready.then(() => {
+        if(!liff.isLoggedIn()) {
+            liff.login();
+        } else {
+            // ログイン済みの場合はプロフィールを取得
+            getUserProfile();
+        }
+    });
 
-    liff.getProfile().then( (profile) => {
+    // ログイン後にユーザープロフィールを取得する関数
+    async function getUserProfile() {
+        const profile = await liff.getProfile();
         const name = profile.displayName;
         const userElement = document.getElementById("user");
         if (userElement) {
             userElement.textContent = name;
         }
-    })
-
+    }
 }
