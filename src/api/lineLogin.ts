@@ -1,8 +1,11 @@
+alert("ファイルが開かれました")
+
 // LIFFに必要な情報の宣言
 import liff from '@line/liff';
 import { useEffect } from 'react';
 const LIFF_ID = "2004006139-5eWAxRAO";
 console.log("これはTypescriptファイルです")
+
 
 export async function LINE_LOGIN(){
     console.log("これはTypescriptファイルの関数です")
