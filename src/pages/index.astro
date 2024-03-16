@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { LINE_LOGIN } from "../api/lineLogin"
+// import { LINE_LOGIN } from "../api/lineLogin"
 ---
 
 <Layout title="Welcome to Astro.">
@@ -8,8 +8,9 @@ import { LINE_LOGIN } from "../api/lineLogin"
 		<h1>LINEにログインします</h1>
 		<p id="user"></p>
 	</main>
-	{ LINE_LOGIN }
 </Layout>
+<script src="../api/lineLogin.ts"></script>
+
 <style is:global>
 	main {
 		margin: auto;
