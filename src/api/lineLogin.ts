@@ -7,7 +7,7 @@ const LIFF_ID = "2004006139-5eWAxRAO";
 export async function LINE_LOGIN(){
 
     // DOMのマウントが行われたら処理を行うのでuseEffectで対応
-    useEffect( () => {
+    await useEffect( () => {
         liff.init({
             liffId: LIFF_ID,
         });
