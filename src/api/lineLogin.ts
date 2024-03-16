@@ -37,3 +37,5 @@ function LINE_LOGIN(){
         }
     }
 }
+
+LINE_LOGIN();
