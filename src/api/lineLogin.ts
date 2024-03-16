@@ -6,7 +6,7 @@ liff.init({
     liffId: LIFF_ID,
 });
 
-export const LINE_LOGIN = () => {
+function  LINE_LOGIN() {
     // LIFFの初期化が完了したら自動でログイン処理を開始
     liff.ready.then(() => {
         if(!liff.isLoggedIn()) {
@@ -28,9 +28,4 @@ export const LINE_LOGIN = () => {
     }
 }
 
-
-//     function LINE_LOGIN(){
-    // }
-    
-// LINE_LOGIN();
-// export default LINE_LOGIN();
+export default LINE_LOGIN();
