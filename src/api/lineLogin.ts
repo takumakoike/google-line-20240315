@@ -1,13 +1,17 @@
 // LIFFに必要な情報の宣言
 import liff from '@line/liff';
+import { useEffect } from 'react';
 const LIFF_ID = "2004006139-5eWAxRAO";
 
 
 export async function LINE_LOGIN(){
 
-    await liff.init({
-        liffId: LIFF_ID,
-    });
+    // DOMのマウントが行われたら処理を行うのでuseEffectで対応
+    useEffect( () => {
+        liff.init({
+            liffId: LIFF_ID,
+        });
+    })
 
     // LIFFの初期化が完了したら自動でログイン処理を開始
     liff.ready.then(() => {
