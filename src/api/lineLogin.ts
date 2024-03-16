@@ -38,4 +38,5 @@ function LINE_LOGIN(){
     }
 }
 
-LINE_LOGIN();
+// LINE_LOGIN();
+export default LINE_LOGIN();
