@@ -11,11 +11,11 @@ function LINE_LOGIN(){
     console.log("これはTypescriptファイルの関数です")
 
     // DOMのマウントが行われたら処理を行うのでuseEffectで対応
-    useEffect( () => {
+    // useEffect( () => {
         liff.init({
             liffId: LIFF_ID,
         });
-    })
+    // })
 
     // LIFFの初期化が完了したら自動でログイン処理を開始
     liff.ready.then(() => {
