@@ -1,0 +1,39 @@
+---
+// コンポーネントスクリプトはここに書きます
+// import Banner from '../components/Banner.astro';
+// import ReactPokemonComponent from '../components/ReactPokemonComponent.jsx';
+// const myFavoritePokemon = [/* ... */];
+// const { title } = Astro.props;
+interface Props {
+    test: string,
+}
+export const test = "これはastroファイルのコードフェンス内に書いた定数になります。これを最終的にpタグで表示されるようにするには、表示先のファイルで定数をHTMLタグで囲う必要があります";
+
+const calendarURL = "";
+---
+
+
+
+<!-- HTMLコメントに対応しています -->
+<!-- {/* JSコメント構文も可能です */} -->
+<!-- {test} -->
+
+
+
+
+<!-- <Banner /> -->
+<!-- <h1>Hello, world!</h1> -->
+
+<!-- propsやコンポーネントスクリプトの変数を使用します -->
+<!-- <p>{title}</p> -->
+
+<!-- `client:`ディレクティブの付いたUIフレームワークコンポーネントはハイドレートされます -->
+<!-- <ReactPokemonComponent client:visible /> -->
+
+<!-- JSXと同じように、HTMLとJavaScriptの式を混ぜられます -->
+<!-- <ul>
+    {myFavoritePokemon.map((data) => <li>{data.name}</li>)}
+</ul> -->
+
+<!-- テンプレートディレクティブを使って、複数の文字列やオブジェクトからクラス名を作成できます -->
+<!-- <p class:list={["add", "dynamic", {classNames: true}]} /> -->

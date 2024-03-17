@@ -22,21 +22,11 @@ export function LINE_LOGIN() {
 async function _getUserProfile() {
     const profile = await liff.getProfile();
     const name = profile.displayName;
-    
-    return (
-        <div>
-            <p>{name}</p>
-        </div>
-    )
-    
-    
-    
-    
-    
-    // const userElement = document.getElementById("user");
-    // if (userElement) {
-    //     userElement.textContent = name;
-    // }
+
+    const userElement = document.getElementById("user");
+    if (userElement) {
+        userElement.textContent = name;
+    }
 }
 
 
