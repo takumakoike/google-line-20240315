@@ -6,7 +6,7 @@ liff.init({
     liffId: LIFF_ID,
 });
 
-function LINE_LOGIN() {
+export function LINE_LOGIN() {
     // LIFFの初期化が完了したら自動でログイン処理を開始
     liff.ready.then(() => {
         if(!liff.isLoggedIn()) {
@@ -25,7 +25,7 @@ async function _getUserProfile() {
     
     return (
         <div>
-            <p>name</p>
+            <p>{name}</p>
         </div>
     )
     
