@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+
+		<!-- <p>{test}</p> -->
+		<h1>LINEにログインします</h1>
+		<p>このアプリケーションの目的</p>
+		<ul>
+			<li>LINE公式アカウントと連携する</li>
+			<li>ログインしたらユーザー名とともにカレンダーを表示させる</li>
+			<li>カレンダーに対してフォーム入力できるようにする</li>
+			<li>フォーム入力したらカレンダーに反映され、その情報をスプレッドシートに保管する</li>
+		</ul>
+
+		<div>
+			<h2>このアプリケーションで達成できること</h2>
+			<ul>
+				<li>LINE公式アカウントを利用した予約システムの構築</li>
+			</ul>
+		</div>
+		<p id="user"></p>
+
+	</main>
+</Layout>
+
+<script src="../api/lineLogin.tsx"></script>
+<style is:global>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+</style>
